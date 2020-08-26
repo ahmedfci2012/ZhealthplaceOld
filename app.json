@@ -1,0 +1,12 @@
+{
+  "name": "Zhealthplace",
+  "displayName": "Zhealthplace",
+  "expo": {
+    "name": "Zhealthplace",
+    "slug": "Zhealthplace",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
