@@ -1,0 +1,216 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.zhealthplace"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:2:3-64
+11-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:2:20-62
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:3:3-75
+12-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:3:20-73
+13    <!-- OPTIONAL PERMISSIONS, REMOVE WHATEVER YOU DO NOT NEED -->
+14    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+14-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:5:3-72
+14-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:5:20-70
+15    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+15-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:6:3-77
+15-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:6:20-75
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:7:3-72
+16-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:7:20-70
+17    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+17-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:8:3-71
+17-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:8:20-69
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:9:3-63
+18-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:9:20-61
+19    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+19-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:10:3-77
+19-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:10:20-75
+20    <!-- These require runtime permissions on M -->
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:12:3-78
+21-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:12:20-76
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:13:3-76
+22-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:13:20-74
+23    <uses-permission android:name="android.permission.CAMERA" />
+23-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:14:3-62
+23-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:14:20-60
+24    <uses-permission android:name="android.permission.READ_CONTACTS" />
+24-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:15:3-69
+24-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:15:20-67
+25    <uses-permission android:name="android.permission.READ_CALENDAR" />
+25-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:16:3-69
+25-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:16:20-67
+26    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+26-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:17:3-70
+26-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:17:20-68
+27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:18:3-77
+27-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:18:20-75
+28    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+28-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:19:3-68
+28-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:19:20-66
+29    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+29-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:20:3-78
+29-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:20:20-76
+30    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+30-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:21:3-70
+30-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:21:20-68
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[:expo-updates] /Users/khwarizm/Zhealthplace/node_modules/expo-updates/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-79
+31-->[:expo-updates] /Users/khwarizm/Zhealthplace/node_modules/expo-updates/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:22-76
+32    <uses-permission android:name="android.permission.STORAGE" />
+32-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:5-66
+32-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:22-63
+33    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+33-->[:expo-location] /Users/khwarizm/Zhealthplace/node_modules/expo-location/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:5-77
+33-->[:expo-location] /Users/khwarizm/Zhealthplace/node_modules/expo-location/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:22-74
+34    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+34-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+34-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+35    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" /> <!-- END OPTIONAL PERMISSIONS -->
+35-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+35-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+36    <application
+36-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:23:3-47:17
+37        android:name="com.zhealthplace.MainApplication"
+37-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:24:5-36
+38        android:allowBackup="false"
+38-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:28:5-32
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.1.0] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/71bf4efc4a31a947ad653616e8e5bcce/core-1.1.0/AndroidManifest.xml:24:18-86
+40        android:icon="@mipmap/ic_launcher"
+40-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:26:5-39
+41        android:label="@string/app_name"
+41-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:25:5-37
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:27:5-50
+43        android:theme="@style/AppTheme" >
+43-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:29:5-36
+44        <meta-data
+44-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:31:5-103
+45            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+45-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:31:16-67
+46            android:value="YOUR-APP-URL-HERE" />
+46-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:31:68-101
+47        <meta-data
+47-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:32:5-112
+48            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+48-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:32:16-68
+49            android:value="YOUR-APP-SDK-VERSION-HERE" />
+49-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:32:69-110
+50
+51        <activity
+51-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:33:5-45:16
+52            android:name="com.zhealthplace.MainActivity"
+52-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:34:7-35
+53            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+53-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:36:7-84
+54            android:label="@string/app_name"
+54-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:35:7-39
+55            android:launchMode="singleTask"
+55-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:37:7-38
+56            android:theme="@style/Theme.App.SplashScreen"
+56-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:39:7-52
+57            android:windowSoftInputMode="adjustResize" >
+57-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:38:7-49
+58            <intent-filter>
+58-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:41:7-44:23
+59                <action android:name="android.intent.action.MAIN" />
+59-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:42:9-60
+59-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:42:17-58
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:43:9-68
+61-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:43:19-66
+62            </intent-filter>
+63        </activity>
+64        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+64-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:46:5-81
+64-->/Users/khwarizm/Zhealthplace/android/app/src/main/AndroidManifest.xml:46:15-79
+65
+66        <meta-data
+66-->[:unimodules-react-native-adapter] /Users/khwarizm/Zhealthplace/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-14:91
+67            android:name="org.unimodules.core.AppLoader#react-native-headless"
+67-->[:unimodules-react-native-adapter] /Users/khwarizm/Zhealthplace/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-79
+68            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+68-->[:unimodules-react-native-adapter] /Users/khwarizm/Zhealthplace/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-88
+69
+70        <provider
+70-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:9-27:20
+71            android:name="expo.modules.filesystem.FileSystemFileProvider"
+71-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:13-74
+72            android:authorities="com.zhealthplace.FileSystemFileProvider"
+72-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:20:13-74
+73            android:exported="false"
+73-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:21:13-37
+74            android:grantUriPermissions="true" >
+74-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:22:13-47
+75            <meta-data
+75-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-26:70
+76                android:name="android.support.FILE_PROVIDER_PATHS"
+76-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:17-67
+77                android:resource="@xml/file_system_provider_paths" />
+77-->[:expo-file-system] /Users/khwarizm/Zhealthplace/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:17-67
+78        </provider>
+79
+80        <service
+80-->[:expo-location] /Users/khwarizm/Zhealthplace/node_modules/expo-location/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:9-18:40
+81            android:name="expo.modules.location.services.LocationTaskService"
+81-->[:expo-location] /Users/khwarizm/Zhealthplace/node_modules/expo-location/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:13-78
+82            android:exported="false" />
+82-->[:expo-location] /Users/khwarizm/Zhealthplace/node_modules/expo-location/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:13-37
+83
+84        <activity
+84-->[com.google.android.gms:play-services-base:16.0.1] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/d0f68b1af6e79ce71abc208b6bea43fb/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+85            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+85-->[com.google.android.gms:play-services-base:16.0.1] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/d0f68b1af6e79ce71abc208b6bea43fb/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+86            android:exported="false"
+86-->[com.google.android.gms:play-services-base:16.0.1] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/d0f68b1af6e79ce71abc208b6bea43fb/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+87-->[com.google.android.gms:play-services-base:16.0.1] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/d0f68b1af6e79ce71abc208b6bea43fb/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+88
+89        <meta-data
+89-->[com.google.android.gms:play-services-basement:16.0.1] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/512082fc8652ee2ff93c77434d756b25/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+90            android:name="com.google.android.gms.version"
+90-->[com.google.android.gms:play-services-basement:16.0.1] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/512082fc8652ee2ff93c77434d756b25/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+91            android:value="@integer/google_play_services_version" />
+91-->[com.google.android.gms:play-services-basement:16.0.1] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/512082fc8652ee2ff93c77434d756b25/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+92
+93        <service
+93-->[androidx.room:room-runtime:2.1.0] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/d1dd4bffbd2ae299fbe9492b8fb3f644/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+94            android:name="androidx.room.MultiInstanceInvalidationService"
+94-->[androidx.room:room-runtime:2.1.0] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/d1dd4bffbd2ae299fbe9492b8fb3f644/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+95            android:exported="false" />
+95-->[androidx.room:room-runtime:2.1.0] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/d1dd4bffbd2ae299fbe9492b8fb3f644/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+96        <service
+96-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+97            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+97-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+98            android:exported="false" />
+98-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+99        <service
+99-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+100            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+100-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+101            android:exported="false" />
+101-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+102        <service
+102-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+103            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+103-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+104            android:exported="false" />
+104-->[io.nlopez.smartlocation:library:3.2.11] /Users/khwarizm/.gradle/caches/transforms-2/files-2.1/9f42cb05497c26fa4bbbe7f5704df14d/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+105    </application>
+106
+107</manifest>

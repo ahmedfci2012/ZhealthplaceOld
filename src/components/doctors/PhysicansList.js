@@ -66,7 +66,7 @@ import Footer from '../Footer';
             <Text note numberOfLines={3}>about about about about about about aboutabout about about about about about aboutabout about about about about about aboutabout about about about about about about</Text>
             <View style={{flex:1, flexDirection:'row',justifyContent:'space-between', alignItems:'center'}}> 
                 <Text note style={{ fontSize: 14}}>Session Fee:  {item.consultationPrice}$ </Text>
-                <Button transparent style={{justifyContent:'flex-end'}} onPress={() => this.props.navigation.navigate('Booking')}>
+                <Button transparent style={{justifyContent:'flex-end'}} onPress={() => this.props.navigation.navigate('Booking', { item: {...item} , clinicId:this.props.clinicId } )}>
                 <Text style={{color: 'blue', fontSize: 13, color:'orange'}}>Book</Text>
                 </Button>
            </View>

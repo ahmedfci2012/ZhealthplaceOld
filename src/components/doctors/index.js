@@ -28,7 +28,7 @@ export default function Doctors(props) {
 :   
 <Content>
        
-<PhysicansList navigation = {props.navigation} physicians_= {physician.data} />
+<PhysicansList navigation = {props.navigation} physicians_= {physician.data} clinicId={id} />
 
  </Content>
 }

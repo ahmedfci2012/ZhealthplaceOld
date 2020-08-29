@@ -1,4 +1,4 @@
-#Wed Aug 26 12:03:28 EET 2020
+#Wed Aug 26 18:03:25 EET 2020
 base.10=/Users/khwarizm/Zhealthplace/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_15.dex
 path.33=classes_9.dex
 path.32=classes_8.dex

@@ -10,7 +10,10 @@ import {  Text, View } from 'react-native';
 import Clinics from './src/components/clinics';
 import Doctors from './src/components/doctors';
 import Booking from './src/components/booking';
+import Home from './src/components/home';
 
+
+import FlashMessage from "react-native-flash-message";
 
 const navOptionHandler = (navigation)=>({
   headerShown:false
@@ -23,9 +26,12 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
+      
   <Stack.Navigator>
   
-
+  
+  <Stack.Screen name="Home" component={Home} 
+    />
     <Stack.Screen name="Clinics" component={Clinics}
     options={{
       headerShown:false
@@ -35,7 +41,14 @@ export default function App() {
     />
     <Stack.Screen name="Booking" component={Booking} 
     />
+
+
+    
   </Stack.Navigator>
+
+   <FlashMessage position="top"  />  
+  
+
 </NavigationContainer>
   
   );

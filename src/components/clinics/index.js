@@ -16,23 +16,46 @@ const URLPhysician="https://medicalapp-api.azurewebsites.net/api/Physician/Get/"
 
 export default function Clinics(props) {
 
-const [tab, changeTap] = useState(1);
+const [tab, changeTap] = useState(2);
 const [clinicCheck, changeCheckClinic] = useState(true);
 const [doctorCheck, changeCheckDoctor] = useState(false);
+
 const [searchTerm, setSearchTerm] = React.useState("");
 
-const clinics = useFetch(URLClinics+searchTerm);
-const physician = useFetch(URLPhysician+searchTerm);
+const [isSearch, startSearch] = useState(false);
+
+
+const physician = useFetch(URLPhysician );
+const clinics = useFetch(URLClinics );
+
+const clinics_s= useFetch( URLClinics + searchTerm, {
+    depends: [isSearch]
+});
+
+const physician_s= useFetch( URLPhysician + searchTerm, {
+  depends: [isSearch]
+});
+
+
+const onClickSearch = ()=>{
+  startSearch(true);
+};
+
+const search = (value)=>{
+  console.log(searchTerm);
+  setSearchTerm(value);
+  startSearch(false);
+}
+
 
  return(
   <Container>
-        
   <View style={{
     alignItems:'center',
     justifyContent:'center',
     backgroundColor:'#f7f7f7'
   }}>
-  <Image 
+  <Image
       source={ require('../../assets/logog.png')}
           style={{width:'100%', height:50, backgroundColor:'#FFFFFF3D'}}
           resizeMode='contain'
@@ -64,16 +87,18 @@ const physician = useFetch(URLPhysician+searchTerm);
             onSubmitEditing={() => {
               this.passwordInput._root.focus();
             }}
-            onChangeText={ (value)=>setSearchTerm(value)}
+            onChangeText={ (value)=>search(value)}
             value={searchTerm}
             keyboardType="email-address"
             style={{ color: "#000000" }}
             //disabled={disabled}
           />
-          
-          <Button style={{ flex:.5, justifyContent:'flex-end', height: 42, }} transparent >
+          <TouchableOpacity>
+          <Button style={{ flex:.5, justifyContent:'flex-end', height: 42, }} transparent 
+          onPress={ onClickSearch}>
               <Text style={{color: "#000000"}}>Search</Text>
           </Button>
+          </TouchableOpacity>
         </View>
 
 <View style={{flexDirection:'row', justifyContent:'center', alignItems:'center', paddingBottom:15}}>
@@ -109,25 +134,30 @@ const physician = useFetch(URLPhysician+searchTerm);
          </TouchableOpacity>
 </View>
 
-{clinics.isLoading || physician.isLoading ? 
+{clinics.isLoading || physician.isLoading||clinics_s.isLoading||physician_s.isLoading ? 
 <Content>
   <View style={{ height:height/2,justifyContent:'center', alignItems:'center',}}>
     <Text> Loading... </Text>
   </View>
-</Content>  
-:   
-<Content> 
-
-{clinicCheck?  <ClinicsList navigation = {props.navigation}   Clinics_= {clinics.data} />:null}
-{doctorCheck?  <PhysicansList navigation = {props.navigation} physicians_= {physician.data} />:null}
-
-    
+</Content> 
+: 
+<Content>
+  {isSearch?
+  <View>
+  {clinicCheck && clinics_s.data?  <ClinicsList navigation = {props.navigation}   Clinics_= { clinics_s.data} />:null}
+  {doctorCheck && physician_s.data ?  <PhysicansList navigation = {props.navigation} physicians_= {physician_s.data} />:null}
+  </View> 
+:
+ <View>
+{clinicCheck && clinics.data?   <ClinicsList navigation = {props.navigation}   Clinics_= {clinics.data} />:null}
+{doctorCheck && physician.data?  <PhysicansList navigation = {props.navigation} physicians_= {physician.data} />:null}
+</View>
+}
 </Content>
 }
 <Footer 
-  tab= {tab} 
+  tab= {2} 
   navigation={props.navigation}
-  changeTap={changeTap}
 />    
 
 </Container>
